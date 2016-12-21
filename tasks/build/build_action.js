@@ -74,12 +74,13 @@ module.exports = function (plugin) {
         'package.json',
         'index.js',
         '{lib,public,server,webpackShims}/**/*'
+        'node_modules/**/*'
       ];
-
+      
       if (deps.length === 1) {
-        files.push(`node_modules/${ deps[0] }/**/*`);
+        // files.push(`node_modules/${ deps[0] }/**/*`);
       } else if (deps.length) {
-        files.push(`node_modules/{${ deps.join(',') }}/**/*`);
+        // files.push(`node_modules/{${ deps.join(',') }}/**/*`);
       }
 
       vfs
