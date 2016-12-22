@@ -73,7 +73,7 @@ module.exports = function (plugin) {
       var files = [
         'package.json',
         'index.js',
-        '{lib,public,server,webpackShims}/**/*'
+        '{lib,public,server,webpackShims}/**/*',
         'node_modules/**/*'
       ];
       
